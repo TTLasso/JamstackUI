@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        div.container {
+            width: 400;
+            margin: 0 auto;
+        }
+
+        .love {
+            font-size: 4em;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="/">Your Page</a> | <a href="/about">Abut this Page</a>
+    </header>
+    {{ content | safe }}
+</body>
+
+</html>
