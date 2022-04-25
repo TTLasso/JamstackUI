@@ -5,9 +5,18 @@ layout: base.njk
 
 <div id="title" class="container">
     <h1>Esta es una pagina para ti</h1>
-    <div class="vibe">Tu eres, </div>
-    <div class="love">
-        &#10084;&#65039;
+    <div class="vibe">Tu eres,
     </div>
+    <ul>
+        {% for article in noticias.articles %}
+            <li>
+                <a href="{{ article.url }}">{{ article.title }}</a>
+                <span>{{ article.source.name }} -
+                    <time>{{ article.publishedAt }}</time>
+                </span>
+            </li>
+            <br>
+        {% endfor %}
+    </ul>
 </div>
 <script src="/js/vibe.js"></script>
