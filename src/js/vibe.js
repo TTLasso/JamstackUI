@@ -1,7 +1,7 @@
 const vibes = [
     "... eres genial",
     "... eres inteligente",
-    "... eres feo",
+    "... eres amable",
     "... eres divertido",
     "... eres alto",
 ];
