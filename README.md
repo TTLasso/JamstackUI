@@ -9,5 +9,4 @@ En el siguiente ejemplo agregare mas funcionalidad, para que ciertos datos sean 
 
 ##CI/CD
 
-El sitio uso control de versiones a traves de GIT, cada vez que un nuevo cambio es empujado a GIT, desencadena la construccion y el nuevo despliegue
-del sitio a la CDN a traves de Jamstack
+El sitio usa Eleventy como SSG y el control de versiones a traves de GIT, cada vez que un nuevo cambio es generado en el codigo, el generado por el SSG, empujado a GIT, desencadena la construccion y el nuevo despliegue del sitio a la CDN a traves de Netlify.
