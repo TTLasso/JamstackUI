@@ -7,6 +7,17 @@ layout: base.njk
     <h1>Esta es una pagina para ti</h1>
     <div class="vibe">Tu eres,
     </div>
+    <h2>Clima</h2>
+    <label for="input">Ingrese el nombre de la ciudad</label>
+    <input type="text" id="input" placeholder="ingrese el nombre de la ciudad"></div>
+    <button id="generate" type="submit">
+        Buscar clima
+    </button>
+    <p id="city"></p>
+    <p id="temp"></p>
+    <p id="main"></p>
+    <p id="desc"></p>
+    <h2>Noticias</h2>
     <ul>
         {% for article in noticias.articles %}
             <li>
@@ -16,7 +27,8 @@ layout: base.njk
                 </span>
             </li>
             <br>
-        {% endfor %}
-    </ul>
-</div>
-<script src="/js/vibe.js"></script>
+            {% endfor %}
+        </ul>
+    </div>
+    <script src="/js/vibe.js"></script>
+    <script src="/js/weather.js"></script>

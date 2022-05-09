@@ -1,0 +1,16 @@
+const axios = require('axios');
+
+
+document.getElementById('generate').addEventListener('click', 
+exports.handle = async function(event, context, callback) {
+
+    const input = document.getElementById('input').value;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${input}&appid=${process.env.WEATHER_API_KEY}`
+
+    const response = await axios.get(url);
+    callback(null, {
+        statusCode: 200,
+        body: JSON.stringify(response.data)
+    });
+    console.log(response.data);
+});
