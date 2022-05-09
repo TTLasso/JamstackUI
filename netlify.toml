@@ -1,4 +1,0 @@
-[build]
-    command = "nom run build"
-    publish = "dist"
-    functions = "src/_functions"
