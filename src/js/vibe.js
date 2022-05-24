@@ -1,9 +1,9 @@
 const vibes = [
-    "... eres genial",
-    "... eres inteligente",
-    "... eres amable",
-    "... eres divertido",
-    "... eres alto",
+    "... es emocionante.",
+    "... es divertido.",
+    "... te permite conocerte a ti mismo.",
+    "... te hace conocer gente nueva.",
+    "... es una aventura.",
 ];
 
 var vibe = vibes[Math.floor(Math.random() * Math.floor(vibes.length))];

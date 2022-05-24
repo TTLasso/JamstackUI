@@ -4,31 +4,51 @@ layout: base.njk
 ---
 
 <div id="title" class="container">
-    <h1>Esta es una pagina para ti</h1>
-    <div class="vibe">Tu eres,
+    <h1>Diario de Viajes</h1>
+    <div class="vibe">Viajar
     </div>
-    <h2>Clima</h2>
-    <label for="input">Ingrese el nombre de la ciudad</label>
-    <input type="text" id="input" placeholder="ingrese el nombre de la ciudad"></div>
-    <button id="generate" type="submit">
-        Buscar clima
-    </button>
-    <p id="city"></p>
-    <p id="temp"></p>
-    <p id="main"></p>
-    <p id="desc"></p>
+    <div>
+        <h2>Clima</h2>
+        <label for="input">Ingrese el nombre de la ciudad</label>
+        <input type="text" id="input" placeholder="ingrese el nombre de la ciudad">
+            <br/> <br/>
+            <label for="diario">Como se siente?</label>
+            <input type="text" id="diario" placeholder="Entrada en el diario">
+                <br/> <br/>
+                <button id="generate" type="submit">
+                    Buscar clima
+                </button>
+                <p id="city"></p>
+                <p id="temp"></p>
+                <p id="desc"></p>
+                <p id="sentimiento"></p>
+                
+            </div>
+        </div>
+    </div>
+    <div class="container">
     <h2>Noticias</h2>
-    <ul>
-        {% for article in noticias.articles %}
-            <li>
-                <a href="{{ article.url }}">{{ article.title }}</a>
-                <span>{{ article.source.name }} -
-                    <time>{{ article.publishedAt }}</time>
-                </span>
-            </li>
-            <br>
-            {% endfor %}
-        </ul>
+        <ul>
+            {% for article in noticias.articles %}
+                <li>
+                    <a href="{{ article.url }}">{{ article.title }}.</a>
+                    <span>/--/ Fuente: {{ article.source.name }} -
+                        <time>{{ article.publishedAt }}</time>
+                    </span>
+                </li>
+                <br>
+                {% endfor %}
+            </ul>
+        </div>
     </div>
-    <script src="/js/vibe.js"></script>
-    <script src="/js/weather.js"></script>
+    <div class="container">
+        <h2>Fauna</h2>
+        <button id="getNews" type="submit">
+            Get Fauna Data
+        </button>
+        <p id="city"></p>
+    </div>
+</div>
+<script src="/js/vibe.js"></script>
+<script src="/js/weather.js"></script>
+<script src="/js/fauna.js"></script>

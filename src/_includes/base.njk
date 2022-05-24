@@ -1,31 +1,122 @@
 <!DOCTYPE html>
 <html lang="en" lang="en">
-
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }}</title>
-    <style>
-        body {
-            text-align: center;
-        }
-
-        div.container {
-            width: 400;
-            margin: 0 auto;
-        }
-
-        .love {
-            font-size: 4em;
-        }
-    </style>
-</head>
-
-<body>
-    <header>
-        <a href="/">Your Page</a> | <a href="/about">Abut this Page</a>
-    </header>
-    {{ content | safe }}
-</body>
-
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet">
+        <title>{{ title }}</title>
+        <style>
+            body {
+                display: grid;
+                background-image: url("images/background.jpg");
+                background-size: cover;
+                font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            .container {
+                display: grid;
+                width: 100%;
+                grid-auto-rows: minmax(150px, flex);
+                /*grid-template-areas: "imp imp imp imp" "butt butt butt butt";*/
+                background: rgb(136, 146, 203);
+                background: linear-gradient(0deg, rgb(136, 146, 203) 0%, rgb(0, 9, 60) 100%);
+                color: white;
+                justify-content: center;
+                grid-gap: 1em;
+                font-size: 20px;
+                font-family: 'Oswald', sans-serif;
+            }
+            div.container {
+                width: 400;
+                margin: 0 auto;
+            }
+            .love {
+                font-size: 5em;
+            }
+            button {
+                width: 100%;
+                height: 50px;
+                background: #3b4a6b;
+                color: rgba(136, 203, 171, 0.5);
+                font-size: 26px;
+                font-family: 'Oswald', sans-serif;
+                border: none;
+                box-shadow: 2px 4px 5px #444;
+                transition: all 0.2s ease-in-out;
+                cursor: pointer;
+                border-radius: 5px;
+                margin-bottom: 10px;
+            }
+            input:focus,
+            select:focus,
+            textarea:focus,
+            button:focus {
+                border: black;
+                outline: white;
+                box-shadow: black;
+            }
+            button:hover {
+                color: rgba(255, 255, 255, 1);
+                box-shadow: 0 5px 15px black;
+            }
+            .holderEntry {
+                margin-bottom: 10px;
+                display: block;
+            }
+            .entry {
+                background: rgba(59, 74, 107, 0.4);
+                color: rgb(255, 255, 255, 0.2);
+            }
+            #entryHolder {
+                display: block;
+                border-radius: 5px;
+            }
+            .holder.headline {
+                font-size: 3em;
+                margin: auto;
+            }
+            label {
+                display: block;
+                font-size: 27px;
+                border-radius: 5px;
+            }
+            input {
+                display: block;
+                height: 60px;
+                width: 100%;
+                background: #a4c5ce;
+                color: black;
+                font-size: 20px;
+                font-family: 'Oswald', sans-serif;
+                border: none;
+                border-radius: 5px;
+            }
+            h1 {
+                font-size: 36px;
+            }
+            textarea {
+                background: #a4c5ce;
+                width: 100%;
+                color: black;
+                font-size: 20px;
+                font-family: 'Oswald', sans-serif;
+                border-radius: 5px;
+            }
+            a {
+                color: white;
+                font-size: 20px;
+                font-family: 'Oswald', sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <a href="/">Your Page</a>
+            |
+            <a href="/about">Abut this Page</a>
+        </header>
+        {{ content | safe }}
+    </body>
 </html>
