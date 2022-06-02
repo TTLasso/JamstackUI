@@ -1,21 +1,24 @@
 body {
-   display:inline;
-    background-image: url("images/background.jpg");
+    display: inline;
+    background-image: url(".images/background.jpg");
     background-size: cover;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     align-items: center;
     justify-content: center;
     align-items: center;
     text-align: center;
-    
+
 }
+
 div.container {
     width: 400;
     margin: 0 auto;
 }
+
 .love {
     font-size: 4em;
 }
+
 button {
     display: block;
     width: 20%;
@@ -31,6 +34,7 @@ button {
     border-radius: 5px;
     margin-bottom: 10px;
 }
+
 input:focus,
 select:focus,
 textarea:focus,
@@ -39,10 +43,12 @@ button:focus {
     outline: white;
     box-shadow: black;
 }
+
 button:hover {
     color: rgba(255, 255, 255, 1);
     box-shadow: 0 5px 15px black;
 }
+
 .holderEntry {
     margin-bottom: 10px;
     display: block;
@@ -55,9 +61,10 @@ button:hover {
 
 
 #entryHolder {
-    display:block;
+    display: block;
     border-radius: 5px;
 }
+
 .holder.headline {
     font-size: 3em;
     margin: auto;
@@ -93,4 +100,3 @@ textarea {
     font-family: 'Oswald', sans-serif;
     border-radius: 5px;
 }
-
