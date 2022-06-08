@@ -27,7 +27,7 @@ layout: base.njk
         </div>
     </div>
 
-    <div class="container">
+    {# <div class="container">
     <h2>Noticias</h2>
         <ul>
             {% for article in noticias.articles %}
@@ -41,17 +41,17 @@ layout: base.njk
                 {% endfor %}
             </ul>
           
-        </div>
+        </div> #}
           
     </div>
     <div class="container">
-        <h2>Fauna</h2>
+        <h2>Entradas</h2>
         <button id="getNews" type="submit">
-            Get Fauna Data
+            Obtener todas las entradas
         </button>
         <p id="faunaData"></p>
     </div>
 </div>
 <script src="/js/vibe.js"></script>
 <script src="/js/weather.js"></script>
-<script src="/js/fauna.js"></script>
+<script src="/js/data.js"></script>
