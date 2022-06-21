@@ -2,7 +2,7 @@ const Image = require('@11ty/eleventy-img');
 
 async function imageShortcode(src, alt, sizes) {
     let metadata = await Image(src, {
-        widths: [null],
+        widths: [600],
         formats: ["jpeg"],
         urlPath: "/images/",
         outputDir: "./dist/images/",
@@ -19,6 +19,7 @@ async function imageShortcode(src, alt, sizes) {
         whitespaceMode: "inline"
     });
 }
+
 
 
 module.exports = function (config) {
